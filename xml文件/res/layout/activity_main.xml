@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.index.hushby.MainActivity" >
+    
+   <FrameLayout
+        android:id="@+id/fl_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1">
+    </FrameLayout>
+     <!--  -->
+     <RadioGroup
+        android:id="@+id/rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:drawableTop="@drawable/pone"
+            android:checked="true"
+            style="@style/radioButtonStyle"
+            android:text="课程表"
+            android:textColor="#cdc8b1" />
+
+        <RadioButton
+            
+            android:id="@+id/radio1"
+            android:drawableTop="@drawable/ptwo"
+            style="@style/radioButtonStyle"
+            android:text="追番表"
+            android:textColor="#cdc8b1" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:drawableTop="@drawable/pthree"
+            style="@style/radioButtonStyle"
+            android:text="备忘录" 
+            android:textColor="#cdc8b1"
+            
+            />
+        <RadioButton
+            
+            android:id="@+id/radio3"
+            android:drawableTop="@drawable/pfour"
+            style="@style/radioButtonStyle"
+            android:text="地图" 
+            android:textColor="#cdc8b1"/>
+        
+    </RadioGroup>  
+
+</LinearLayout>
